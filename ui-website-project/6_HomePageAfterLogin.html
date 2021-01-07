@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/lightslider.css">
+    <script type="text/javascript" src="js/Jquery.js"></script>
+    <script type="text/javascript" src="js/lightslider.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(e) {
+        if (!e.target.matches('.dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown");
+          if (myDropdown.classList.contains('show')) {
+            myDropdown.classList.remove('show');
+          }
+        }
+      }
+      </script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;700&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <title>HomePageAfterLogin</title>
+    <style>
+      h2{
+        text-align: left;
+        color: white;
+        font-size: 50px;
+        margin-left: 0.8em;
+      }
+    
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="landing">
+        <nav>
+          <h1 id="logo"><a href="6_HomePageAfterLogin.html">Movier</a></h1>
+          <ul class="nav-links">
+            <li>    <div class="searchBox">
+
+              <input class="searchInput"type="text" name="" placeholder="Search">
+              <button class="searchButton" href="#">
+                  <i class="material-icons">
+                      search
+                  </i>
+              </button>
+          </div></li>
+            <li><a href="7_Films.html">Films</a></li>
+            <li><a href="9_Lists.html">Lists</a></li>
+            <li> <div class="dropdown">
+              <button class="dropbtn" onclick="myFunction()">Username
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content" id="myDropdown">
+                <a href="11_Profile.html">Profile</a>
+                <a href="19_ProfileNetworkInvite.html">Invite</a>
+                <a href="1_HomePage.html">Log-out</a>
+              </div>
+              </div> </li>
+          </ul>
+        </nav>
+        <div class="space"><p></p></div>
+        <iframe width="1388" height="600" src="https://www.youtube.com/embed/ZwKhufmMxko" frameborder="0" allowfullscreen></iframe>
+        <div class="space"><p></p></div>
+        <h2>Continue</h2>
+        <ul id="autoWidth" class="cs-hidden">
+          <li class="item-a">
+            <div class="box">
+              <div class="slide-img">
+                <img src="film_posters/matrix.jpg" alt="1">
+                <div class="overlay">
+                  <a href="#" class="buy-btn">Watch Now</a>
+                </div>
+              </div>
+              <div class="detail-box">
+                <div class="type">
+                  <a href="#">The Matrix</a>
+                  <span>Sci-Fi</span>
+                </div>
+                <a href="#" class="price">add to list + </a>
+              </div>
+          </li>
+          <li class="item-b">
+            <div class="box">
+              <div class="slide-img">
+                <img src="film_posters/fargo.jpg" alt="1">
+                <div class="overlay">
+                  <a href="#" class="buy-btn">Watch Now</a>
+                </div>
+              </div>
+              <div class="detail-box">
+                <div class="type">
+                  <a href="#">The Matrix</a>
+                  <span>Sci-Fi</span>
+                </div>
+                <a href="#" class="price">add to list + </a>
+              </div>
+          </li>
+          <li class="item-c">
+            <div class="box">
+              <div class="slide-img">
+                <img src="film_posters/geleceğe_dönüş.jpg" alt="1">
+                <div class="overlay">
+                  <a href="#" class="buy-btn">Watch Now</a>
+                </div>
+              </div>
+              <div class="detail-box">
+                <div class="type">
+                  <a href="#">The Matrix</a>
+                  <span>Sci-Fi</span>
+                </div>
+                <a href="#" class="price">add to list + </a>
+              </div>
+          </li>
+          <li class="item-d">
+            <div class="box">
+              <div class="slide-img">
+                <img src="film_posters/kill_bill.jpg" alt="1">
+                <div class="overlay">
+                  <a href="#" class="buy-btn">Watch Now</a>
+                </div>
+              </div>
+              <div class="detail-box">
+                <div class="type">
+                  <a href="#">The Matrix</a>
+                  <span>Sci-Fi</span>
+                </div>
+                <a href="#" class="price">add to list + </a>
+              </div>
+          </li>
+          <li class="item-e">
+            <div class="box">
+              <div class="slide-img">
+                <img src="film_posters/ölü_ozanlar.jpg" alt="1">
+                <div class="overlay">
+                  <a href="#" class="buy-btn">Watch Now</a>
+                </div>
+              </div>
+              <div class="detail-box">
+                <div class="type">
+                  <a href="#">The Matrix</a>
+                  <span>Sci-Fi</span>
+                </div>
+                <a href="#" class="price">add to list + </a>
+              </div>
+          </li>
+        </ul>
+        <div class="space"><p></p></div>
+
+
+        <h2>Latest Films</h2>
+        <ul id="autoWidth2" class="cs-hidden">
+          <li class="item-a">
+            <div class="box">
+              <div class="slide-img">
+                <img src="film_posters/wall_e.jpg" alt="1">
+                <div class="overlay">
+                  <a href="#" class="buy-btn">Watch Now</a>
+                </div>
+              </div>
+              <div class="detail-box">
+                <div class="type">
+                  <a href="#">The Matrix</a>
+                  <span>Sci-Fi</span>
+                </div>
+                <a href="#" class="price">add to list + </a>
+              </div>
+          </li>
+          <li class="item-b">
+            <div class="box">
+              <div class="slide-img">
+                <img src="film_posters/titanic.jpg" alt="1">
+                <div class="overlay">
+                  <a href="#" class="buy-btn">Watch Now</a>
+                </div>
+              </div>
+              <div class="detail-box">
+                <div class="type">
+                  <a href="#">The Matrix</a>
+                  <span>Sci-Fi</span>
+                </div>
+                <a href="#" class="price">add to list + </a>
+              </div>
+          </li>
+          <li class="item-c">
+            <div class="box">
+              <div class="slide-img">
+                <img src="film_posters/davinci_code.jpg" alt="1">
+                <div class="overlay">
+                  <a href="#" class="buy-btn">Watch Now</a>
+                </div>
+              </div>
+              <div class="detail-box">
+                <div class="type">
+                  <a href="#">The Matrix</a>
+                  <span>Sci-Fi</span>
+                </div>
+                <a href="#" class="price">add to list + </a>
+              </div>
+          </li>
+          <li class="item-d">
+            <div class="box">
+              <div class="slide-img">
+                <img src="film_posters/django.jpg" alt="1">
+                <div class="overlay">
+                  <a href="#" class="buy-btn">Watch Now</a>
+                </div>
+              </div>
+              <div class="detail-box">
+                <div class="type">
+                  <a href="#">The Matrix</a>
+                  <span>Sci-Fi</span>
+                </div>
+                <a href="#" class="price">add to list + </a>
+              </div>
+          </li>
+          <li class="item-e">
+            <div class="box">
+              <div class="slide-img">
+                <img src="film_posters/interstellar.jpg" alt="1">
+                <div class="overlay">
+                  <a href="#" class="buy-btn">Watch Now</a>
+                </div>
+              </div>
+              <div class="detail-box">
+                <div class="type">
+                  <a href="#">The Matrix</a>
+                  <span>Sci-Fi</span>
+                </div>
+                <a href="#" class="price">add to list + </a>
+              </div>
+          </li>
+        </ul>
+
+        <div class="space"><p></p></div>
+        <h2 >Coming Soon</h2>
+        <ul id="autoWidth3" class="cs-hidden">
+          <li class="item-a">
+            <div class="box">
+              <div class="slide-img">
+                <img src="film_posters/eternal_sunshine.jpg" alt="1">
+                <div class="overlay">
+                  <a href="#" class="buy-btn">Watch Now</a>
+                </div>
+              </div>
+              <div class="detail-box">
+                <div class="type">
+                  <a href="#">The Matrix</a>
+                  <span>Sci-Fi</span>
+                </div>
+                <a href="#" class="price">add to list + </a>
+              </div>
+          </li>
+          <li class="item-b">
+            <div class="box">
+              <div class="slide-img">
+                <img src="film_posters/midsommar.jpg" alt="1">
+                <div class="overlay">
+                  <a href="#" class="buy-btn">Watch Now</a>
+                </div>
+              </div>
+              <div class="detail-box">
+                <div class="type">
+                  <a href="#">The Matrix</a>
+                  <span>Sci-Fi</span>
+                </div>
+                <a href="#" class="price">add to list + </a>
+              </div>
+          </li>
+          <li class="item-c">
+            <div class="box">
+              <div class="slide-img">
+                <img src="film_posters/lala_land.jpg" alt="1">
+                <div class="overlay">
+                  <a href="#" class="buy-btn">Watch Now</a>
+                </div>
+              </div>
+              <div class="detail-box">
+                <div class="type">
+                  <a href="#">The Matrix</a>
+                  <span>Sci-Fi</span>
+                </div>
+                <a href="#" class="price">add to list + </a>
+              </div>
+          </li>
+          <li class="item-d">
+            <div class="box">
+              <div class="slide-img">
+                <img src="film_posters/pulp_fiction.jpg" alt="1">
+                <div class="overlay">
+                  <a href="#" class="buy-btn">Watch Now</a>
+                </div>
+              </div>
+              <div class="detail-box">
+                <div class="type">
+                  <a href="#">The Matrix</a>
+                  <span>Sci-Fi</span>
+                </div>
+                <a href="#" class="price">add to list + </a>
+              </div>
+          </li>
+          <li class="item-e">
+            <div class="box">
+              <div class="slide-img">
+                <img src="film_posters/taxi_driver.jpg" alt="1">
+                <div class="overlay">
+                  <a href="#" class="buy-btn">Watch Now</a>
+                </div>
+              </div>
+              <div class="detail-box">
+                <div class="type">
+                  <a href="#">The Matrix</a>
+                  <span>Sci-Fi</span>
+                </div>
+                <a href="#" class="price">add to list + </a>
+              </div>
+          </li>
+        </ul>
+        <div class="space"><p></p></div>
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      
+      </section>
+      <footer>
+        <ul class="footer-links">
+          <li><a href="28_TermsOfUse.html">TERMS OF USE</a></li>
+          <li><a href="29_PrivacyPolicy.html">PRIVACY POLICY</a></li>
+          <li><a href="4_FAQ.html">F.A.Q.</a></li>
+        </ul>
+    </footer>
+    </main>
+   
+ 
+
+
+  </div>
+
+  </body>
+</html> 
