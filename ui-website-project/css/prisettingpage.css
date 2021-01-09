@@ -1,0 +1,253 @@
+/*@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap");*/
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+}
+
+.topright {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+}
+
+#button {
+  line-height: 12px;
+  width: 18px;
+  font-size: 8pt;
+  font-family: tahoma;
+  margin-top: 1px;
+  margin-right: 2px;
+}
+
+body {
+  background: #282a2b;
+}
+
+.wrapper {
+  display: flex;
+  position: relative;
+}
+.wrapper .sidebar {
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  background: #282a2b;
+  padding: 30px 0;
+}
+
+.wrapper .sidebar h1 {
+  color: white;
+  text-align: center;
+
+  margin-bottom: 40px;
+}
+
+.wrapper .sidebar ul {
+  width: 100%;
+  float: left;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.wrapper .sidebar ul li {
+  border-bottom: 2px solid rgba(225, 225, 225, 0.5);
+  border-top: 2px solid rgba(225, 225, 225, 0.5);
+  color: white;
+  display: block;
+  width: 100%;
+  float: left;
+  list-style-type: none;
+  padding: 20px;
+}
+
+.wrapper .sidebar ul li:first-child {
+  border-top: 2px solid rgba(225, 225, 225, 0.5);
+}
+.wrapper .sidebar ul li:last-child {
+  border-bottom: 2px solid rgba(225, 225, 225, 0.5);
+}
+
+.wrapper .sidebar ul li a {
+  color: white;
+  display: block;
+  text-decoration: none;
+}
+
+.sidebar > ul > li.active {
+  padding: 10px;
+}
+.sidebar > ul > li.active > a {
+  background: #696969;
+  padding: 10px;
+  border-radius: 20px;
+}
+*/
+
+/*.wrapper .sidebar ul li:hover {
+  background: #696969;
+  width: 180px;
+  height: 59px;
+  /*border-top-left-radius: 25%;
+  border-top-right-radius: 25%;
+  border-bottom-left-radius: 25%;
+  border-bottom-right-radius: 25%;
+  border-radius: 30px;
+}*/
+
+/*.wrapper .sidebar ul li:hover a {
+  color: #c0c0c0;
+}*/
+
+.form {
+  width: 100;
+  float: left;
+}
+.cancelForm {
+  /* position: absolute; */
+  /* left: 50%; */
+  /* top: 50%; */
+  width: 810px;
+  /* right: 50%; */
+  /* transform: translate(-50%, -50%); */
+  /* width: 50%; */
+  /* padding: 10px; */
+  border: 5px white;
+  /* float: left; */
+  /* margin: 0 auto; */
+  margin: 148px 0 0 340px;
+}
+
+.cancelForm h2 {
+  color: white;
+  position: absolute;
+
+  left: 330px;
+  top: 100px;
+  font-size: x-large;
+}
+.explanation {
+  width: 100%;
+  float: left;
+}
+.expl {
+  width: 50%;
+  float: left;
+}
+
+.form {
+  width: 100;
+  float: left;
+}
+.explanation p {
+  width: 100%;
+  float: left;
+  color: white;
+}
+
+.expl p {
+  width: 100%;
+  float: left;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.outer {
+  border: 2px solid #c0c0c0;
+  padding: 3px;
+  height: 360px;
+  float: left;
+  margin: 5px;
+  position: absolute;
+
+  left: 330px;
+  top: 190px;
+  bottom: 350px;
+  right: 330px;
+}
+
+#socialIcons {
+  position: relative;
+  margin-top: 300px !important;
+}
+.cancelForm .boxs .first {
+  width: 100%;
+  float: left;
+  color: white;
+}
+
+.cancelForm .boxs .btnholder {
+  width: 500px;
+  margin: 0 auto;
+  /* float: left; */
+  /* padding:150px 10px ; */
+}
+
+.boxs .outer .first .lineone {
+  position: absolute;
+  left: 100px;
+}
+.boxs .outer .first .line2 {
+  position: absolute;
+  left: 300px;
+  bottom: 223px;
+}
+
+.boxs .outer .first .line12 {
+  position: absolute;
+  left: 500px;
+  bottom: 223px;
+}
+.boxs .outer .first .line13 {
+  position: absolute;
+  left: 100px;
+  bottom: 183px;
+}
+
+.boxs .outer .first .line22 {
+  position: absolute;
+  left: 300px;
+  bottom: 183px;
+}
+
+.cancelForm .boxs .btn {
+  float: left;
+  /* padding: 0 0 0 20px; */
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  width: 185px;
+  margin: 140px 20px 0;
+  padding: 10px 15px;
+  line-height: 20px;
+  border-radius: 20px;
+  background: transparent;
+  color: #ffffff;
+  text-decoration: none;
+  border: 2px solid rgba(225, 225, 225, 0.5);
+}
+
+.btnholder {
+  position: absolute;
+  left: 100px;
+  bottom: 50px;
+  width: 500px;
+  margin: 0 auto;
+  /* float: left; */
+  /* padding:150px 10px ; */
+}
+.btnholder2 {
+  position: absolute;
+  left: 400px;
+  bottom: 50px;
+  width: 500px;
+  margin: 0 auto;
+  /* float: left; */
+  /* padding:150px 10px ; */
+}
