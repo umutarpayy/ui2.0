@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+}
+
+.topright {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+}
+
+#button {
+  line-height: 12px;
+  width: 18px;
+  font-size: 8pt;
+  font-family: tahoma;
+  margin-top: 1px;
+  margin-right: 2px;
+}
+
+body {
+  background: #282a2b;
+}
+
+.wrapper {
+  display: flex;
+  position: relative;
+}
+.wrapper .sidebar {
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  background: #282a2b;
+  padding: 30px 0;
+}
+
+.wrapper .sidebar h1 {
+  color: white;
+  text-align: center;
+
+  margin-bottom: 40px;
+}
+
+.wrapper .sidebar ul {
+  width: 100%;
+  float: left;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.wrapper .sidebar ul li {
+  border-bottom: 2px solid rgba(225, 225, 225, 0.5);
+  border-top: 2px solid rgba(225, 225, 225, 0.5);
+  color: white;
+  display: block;
+  width: 100%;
+  float: left;
+  list-style-type: none;
+  padding: 20px;
+}
+
+.wrapper .sidebar ul li:first-child {
+  border-top: 2px solid rgba(225, 225, 225, 0.5);
+}
+.wrapper .sidebar ul li:last-child {
+  border-bottom: 2px solid rgba(225, 225, 225, 0.5);
+}
+
+.wrapper .sidebar ul li a {
+  color: white;
+  display: block;
+  text-decoration: none;
+}
+
+.sidebar > ul > li.active {
+  padding: 10px;
+}
+.sidebar > ul > li.active > a {
+  background: #696969;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.paymentForm h2 {
+  color: white;
+  position: absolute;
+
+  left: 330px;
+  top: 100px;
+  font-size: x-large;
+}
+.paymentForm .explanation h3 {
+  color: white;
+  position: absolute;
+  left: 350px;
+  top: 190px;
+}
+
+.paymentForm .explanation .card {
+  position: absolute;
+  left: 350px;
+  top: 230px;
+}
+
+.paymentForm .explanation .card1 {
+  position: absolute;
+  left: 350px;
+  top: 290px;
+}
+.paymentForm .explanation .card input {
+  color: white;
+  width: 225px;
+  height: 20px;
+  float: left;
+  text-align: start;
+  background-color: #444748e1;
+  border: 2px solidrgba(225, 225, 225, 0.5);
+  font-size: 18px;
+  border-radius: 10px;
+  padding-left: 2px;
+  margin: 20px 0 35px;
+  padding: 10px 10px 20px 40px;
+}
+.paymentForm .explanation .card1 input {
+  color: white;
+  width: 225px;
+  height: 20px;
+  /* height: 1%; */
+  float: left;
+  text-align: start;
+  background-color: #444748e1;
+  border: 2px solidrgba(225, 225, 225, 0.5);
+  font-size: 18px;
+  border-radius: 10px;
+  /* padding: 5px 0; */
+  /* padding-top: 10px; */
+  padding-left: 2px;
+  margin: 20px 0 35px;
+  /* padding-bottom: 20px; */
+  /* padding-left: 70px; */
+  padding: 10px 10px 20px 40px;
+}
+
+.paymentForm .explanation .card2 input {
+  /* display: grid; */
+  /* grid-row-gap: 50px; */
+  /* grid-template-columns: auto auto auto; */
+  position: absolute;
+
+  left: 350px;
+  top: 350px;
+  color: white;
+  width: 100px;
+  height: 20px;
+  /* height: 1%; */
+  float: left;
+  text-align: start;
+  background-color: #444748e1;
+  border: 2px solidrgba(225, 225, 225, 0.5);
+  font-size: 20px;
+  border-radius: 10px;
+  /* padding: 5px 0; */
+  /* padding-top: 10px; */
+  padding-left: 10px;
+  margin: 20px 0 35px;
+  padding: 10px 10px 20px 10px;
+}
+
+.paymentForm .explanation .card3 input {
+  position: absolute;
+  left: 470px;
+  top: 350px;
+  color: white;
+  width: 100px;
+  height: 20px;
+  float: left;
+  text-align: start;
+  background-color: #444748e1;
+  border: 2px solidrgba(225, 225, 225, 0.5);
+  font-size: 17px;
+  border-radius: 10px;
+  padding-left: 10px;
+  margin: 20px 0 35px;
+  padding: 10px 10px 20px 10px;
+}
+.paymentForm .explanation .card4 input {
+  position: absolute;
+  left: 350px;
+  top: 400px;
+  color: white;
+  width: 100px;
+  height: 20px;
+  float: left;
+  text-align: start;
+  background-color: #444748e1;
+  border: 2px solidrgba(225, 225, 225, 0.5);
+  font-size: 15px;
+  border-radius: 10px;
+  padding-left: 10px;
+  margin: 20px 0 35px;
+  padding: 10px 10px 20px 10px;
+}
+.paymentForm .explanation .card5 input {
+  position: absolute;
+  left: 470px;
+  top: 400px;
+  color: white;
+  width: 100px;
+  height: 20px;
+  float: left;
+  text-align: start;
+  background-color: #444748e1;
+  border: 2px solidrgba(225, 225, 225, 0.5);
+  font-size: 15px;
+  border-radius: 10px;
+  padding-left: 10px;
+  margin: 20px 0 35px;
+  padding: 10px 10px 20px 10px;
+}
+.form {
+  width: 100;
+  float: left;
+}
+.card span {
+  width: 100%;
+  float: left;
+}
+.passwordForm .password label {
+  /* position: absolute; */
+  font-size: medium;
+  /* left: 2px; */
+  color: white;
+  border-bottom: 2px solid rgba(225, 225, 225, 0.5);
+  margin: 0 0 30px;
+}
+
+.paymentForm .subs h3 {
+  color: white;
+  position: absolute;
+  right: 700px;
+  top: 180px;
+}
+
+.paymentForm .subs .first input {
+  position: absolute;
+  right: 850px;
+  top: 240px;
+
+  border: 2px solidrgba(225, 225, 225, 0.5);
+}
+
+.paymentForm .subs .first label {
+  color: white;
+  position: absolute;
+  right: 750px;
+  top: 237px;
+}
+
+.paymentForm .subs .second input {
+  position: absolute;
+  right: 850px;
+  top: 290px;
+
+  border: 2px solidrgba(225, 225, 225, 0.5);
+}
+
+.paymentForm .subs .second label {
+  color: white;
+  position: absolute;
+  right: 750px;
+  top: 288px;
+}
+
+.btnholder {
+  position: absolute;
+  left: 400px;
+  bottom: 300px;
+  width: 500px;
+  margin: 0 auto;
+  /* float: left; */
+  /* padding:150px 10px ; */
+}
+.btnholder2 {
+  position: absolute;
+  left: 700px;
+  bottom: 300px;
+  width: 500px;
+  margin: 0 auto;
+  /* float: left; */
+  /* padding:150px 10px ; */
+}
+.btn {
+  float: left;
+  /* padding: 0 0 0 20px; */
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  width: 185px;
+  margin: 140px 20px 0;
+  padding: 10px 15px;
+  line-height: 20px;
+  border-radius: 20px;
+  background: transparent;
+  color: #ffffff;
+  text-decoration: none;
+  border: 2px solid rgba(225, 225, 225, 0.5);
+}

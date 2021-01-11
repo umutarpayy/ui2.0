@@ -1,71 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;700&family=Lobster&display=swap"
-      rel="stylesheet"
-    />
-    <title>ProfileWatchlist</title>
-    <script>
-      /* When the user clicks on the button, 
-      toggle between hiding and showing the dropdown content */
-      function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-      }
-      
-      // Close the dropdown if the user clicks outside of it
-      window.onclick = function(e) {
-        if (!e.target.matches('.dropbtn')) {
-        var myDropdown = document.getElementById("myDropdown");
-          if (myDropdown.classList.contains('show')) {
-            myDropdown.classList.remove('show');
-          }
+    <link rel="stylesheet" type="text/css" href="watchli.css">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;700&family=Lobster&display=swap"
+        rel="stylesheet" />
+    <style>
+        .h1 {
+            font-size: 40px;
+            border: rgba(225, 225, 225, 0.5) solid 2px;
+            border-radius: 25px;
         }
-      }
-      </script>
-  </head>
-  <body>
-    <main>
-      <section class="landing">
-        <nav>
-          <h1 id="logo"><a href="6_HomePageAfterLogin.html">Movier</a></h1>
-          <ul class="nav-links">
-            <li>    <div class="searchBox">
+    </style>
+    <title>Profile</title>
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
 
-              <input class="searchInput"type="text" name="" placeholder="Search">
-              <button class="searchButton" href="#">
-                  <i class="material-icons">
-                      search
-                  </i>
-              </button>
-          </div></li>
-            <li><a href="7_Films.html">Films</a></li>
-            <li><a href="9_Lists.html">Lists</a></li>
-            <li> <div class="dropdown">
-              <button class="dropbtn" onclick="myFunction()">Username
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content" id="myDropdown">
-                <a href="11_Profile.html">Profile</a>
-                <a href="19_ProfileNetworkInvite.html">Invite</a>
-                <a href="1_HomePage.html">Log-out</a>
-              </div>
-              </div> </li>
-          </ul>
-        </nav>
-      </section>
-      <footer>
-        <ul class="footer-links">
-          <li><a href="28_TermsOfUse.html">TERMS OF USE</a></li>
-          <li><a href="29_PrivacyPolicy.html">PRIVACY POLICY</a></li>
-          <li><a href="4_FAQ.html">F.A.Q.</a></li>
-        </ul>
-        
-    </footer>
-    </main>
-   
-  </body>
-</html> 
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (e) {
+            if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <main>
+        <section class="landing">
+            <nav>
+                <h1 id="logo"><a class="a_mouvier" href="6_HomePageAfterLogin.html">Movier</a></h1>
+                <ul class="nav-links">
+                    <li>
+                        <div class="searchBox">
+
+                            <input class="searchInput" type="text" name="" placeholder="Search">
+                            <button class="searchButton" href="#">
+                                <i class="material-icons">
+                                    search
+                                </i>
+                            </button>
+                        </div>
+                    </li>
+                    <li><a class="a_li" href="7_Films.html">Films</a></li>
+                    <li><a class="a_li" href="9_Lists.html">Lists</a></li>
+
+                    <li><a class="a_li" href="9_Lists.html"> Username</a></li>
+
+
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="11_Profile.html">Profile</a>
+                        <a href="19_ProfileNetworkInvite.html">Invite</a>
+                        <a href="1_HomePage.html">Log-out</a>
+                    </div>
+                    </div>
+                    </li>
+                </ul>
+            </nav>
+            <main class="MAIN">
+                <div class="div1">
+                    <span class="span_img"><img class="imf_logo" src="profil.jpeg">
+                        <p class="user_img">SHIN JIMIN</p>
+                        <div class="div_liste">
+                            <P class="p7">7<br> Lists</P><br>
+                            <P class="p8">52 <br>
+                                Followers
+                            </P><br>
+                            <P class="p9">93<br>
+                                Following
+                            </P>
+                        </div>
+
+
+                    </span>
+
+                </div>
+            </main>
+            <div class="pof">
+                <div class="pro">
+                    <p class="prf_p"><a href='#'>Profile</a></p>
+                    <p class="prf_p"><a href='#'>Activity</a></p>
+                    <p class="prf_p"><a href='#'>Watchlist</a> </p>
+                    <p class="prf_p"><a href='#'>Lists</a></p>
+                    <p class="prf_p"><a href='#'>Reviews</a></p>
+                    <p class="prf_p"><a href='#'>Network</a></p>
+                    <p class="prf_p"><a href='#'>Edit Profile</a></p>
+                </div>
+            </div>
+            <div class="sidebar">
+                <h2 class="h2"><i class="fas fa-cog"></i><a href='#'>Settings</a> </h2>
+            </div>
+
+            <div class="edit">
+                <h3><i class="fas fa-edit"></i>Edit Watchlists</h3>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="review">
+                <h2 style="color: white;">Watchlist</h2>
+
+                <hr style="width:99%;text-align:left;margin-left:-1px ; margin-top:10px ">
+            </div>
+            <br>
+            <br>
+            <div class="foto">
+                <img src="/watchlist.png" style="width: 1000px;" alt="" srcset="">
+            </div>
+
+
+
+
+
+
+
+            <footer>
+                <ul class="footer-links">
+                    <li><a href="28_TermsOfUse.html">TERMS OF USE</a></li>
+                    <li><a href="29_PrivacyPolicy.html">PRIVACY POLICY</a></li>
+                    <li><a href="4_FAQ.html">F.A.Q.</a></li>
+                </ul>
+
+            </footer>
+
+</body>
+
+</html>
