@@ -26,6 +26,62 @@
         }
       }
       </script>
+
+      <style>
+
+        .boxes{
+          width:1325px;
+          padding: 128px;
+          border: 2px solid rgb(194, 193, 193);
+          margin: 0;
+          position: absolute;
+          top: 10px;
+          left: 90px;
+        }
+
+
+        * {
+          box-sizing: border-box;
+        }
+
+        .column {
+          float: left;
+          width: 33.33%;
+          padding: 5px;
+        }
+
+        /* Clearfix (clear floats) */
+        .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        .showmore-button  
+        {  
+            border-radius: 25px;  
+            background-color: #4F81BD;  
+            color:#FFFFFF;  
+            text-align :center;  
+            font-family:arial, helvetica, sans-serif;  
+            padding: 5px 10px 10px 10px;  
+            font-weight:bold;  
+            width:100px;  
+            height:30px; 
+            position: absolute;
+            top: 325px;
+            right: 200px; 
+        } 
+
+        div.ex2 {
+            background-color:rgb(61, 61, 61);
+            width: 1325px;
+            height: 300px;
+            overflow: scroll;
+            position: absolute;
+            left:90px;
+            top:100px;
+        }
+      </style>
   </head>
   <body>
     <main>
@@ -53,11 +109,69 @@
                 <a href="19_ProfileNetworkInvite.html">Invite</a>
                 <a href="1_HomePage.html">Log-out</a>
               </div>
+              
               </div> </li>
           </ul>
+          
         </nav>
         <h2 class="big-text"></h2>
+        
+        <div class = "ex2"
+        <div  style="overflow-y:scroll; height:550px; background:rgb(48, 47, 47)">
+
+          <div class = "boxes" > 
+            <h5 style="color: white; position:absolute; top: 10px; left: 25px;">List name: Fantastic  &nbsp; &nbsp;    Category: Horror  &nbsp; &nbsp;      Created by: Alex</h5>
+          </div>
+
+
+          <div class = "movie-row"> 
+          </br></br></br></br>&nbsp; &nbsp;&nbsp; &nbsp;
+            <img src="film_posters/Ekran görüntüsü 2021-01-11 140446.png" style="position: absolute; top:50px ;left:100px">
+          </div>
+          <button class="showmore-button" style="position: absolute; top:220px"><a href="10_List.html">show more</a></button>
+         
+
+          
+          <div class = "boxes" style="position: absolute; left: 90px; top: 300px;" > 
+            <h5 style="color: white; position: absolute; left: 25px; top:11px">List name: Fantastic  &nbsp; &nbsp;    Category: Horror  &nbsp; &nbsp;      Created by: Alex</h5>
+          </div>
+
+          <div class = "movie-row"> 
+          </br></br></br></br>&nbsp; &nbsp;&nbsp; &nbsp;
+            <img src="film_posters/Ekran görüntüsü 2021-01-11 141631.png" style="position: absolute; left:100px; top:340px ;">
+          </div>
+          <button class="showmore-button"style="position: absolute; top:500px"><a href="10_List.html">show more</a></button>
+
+        </div>
+
+
+          
+
+          <!--<div class="row">
+            <div class="column">
+            </br></br></br> &nbsp; &nbsp; &nbsp; &nbsp;
+              <img src="film_posters/midsommar.jpg" alt="Snow" style="width:30%; height:10%; ">
+            </div>
+            <div class="column">
+            </br></br></br> 
+              <img src="film_posters/wall_e.jpg" alt="Forest" style="width:30%; height: 10%;">
+            </div>
+            <div class="column">
+            </br></br></br> 
+              <img src="film_posters/pulp_fiction.jpg" alt="Mountains" style="width:30%; height: 10%;">
+            </div>
+          </div>  -->
+          
+          
+        </div>
+          
+          
+          
+         </div>
       </section>
+
+
+
       <footer>
         <ul class="footer-links">
           <li><a href="28_TermsOfUse.html">TERMS OF USE</a></li>

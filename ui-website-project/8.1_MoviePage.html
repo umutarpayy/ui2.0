@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;700&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <title>Lists</title>
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(e) {
+        if (!e.target.matches('.dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown");
+          if (myDropdown.classList.contains('show')) {
+            myDropdown.classList.remove('show');
+          }
+        }
+      }
+      </script>
+
+      <style>
+        .lalaland{
+          position: absolute;
+          top: 100px;
+          left: 380px;
+
+          
+        }
+        .lalaland-info{
+          color: white;
+          position: absolute;
+          left: 380px;
+          top:510px ;
+        }
+        
+        .comment{
+          position:absolute;
+          left: 380px;
+          top: 610px;
+          color:white;
+        }
+        .other-comments{
+          color: white;
+          position:absolute;
+          left: 380px;
+          top: 600px;
+        }
+
+        .collapsible {
+          background-color: #777;
+          color: white;
+          cursor: pointer;
+          padding: 12px;
+          width: 50%;
+          border: none;
+          text-align:left;
+          outline: none;
+          font-size: 15px;
+          position: absolute;
+          left: 380px;
+          top: 720px;
+        }
+
+        .active, .collapsible:hover {
+          background-color: rgb(12, 12, 12);
+        }
+
+        .content {
+          padding: 0 18px;
+          display: none;
+          overflow: hidden;
+          background-color: #0a0a0a;
+        }
+       
+
+          button{
+            cursor: pointer;
+            outline: 0;
+            color: #AAA;
+
+          }
+
+          .btn:focus {
+            outline: none;
+          }
+
+          button.green{
+            color: green;
+          }
+
+          button.red{
+            color: red;
+          }
+
+          /* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 12px 16px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: absolute;
+  bottom: 200px;
+  right: 800px;
+  width: 250px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 300px;
+  right: 500px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+       
+        
+              
+      </style>
+  </head>
+  <body>
+    <main>
+      <section class="landing">
+        <nav>
+          <h1 id="logo"><a href="6_HomePageAfterLogin.html">Movier</a></h1>
+          <ul class="nav-links">
+            <li>    <div class="searchBox">
+
+              <input class="searchInput"type="text" name="" placeholder="Search">
+              <button class="searchButton" href="#">
+                  <i class="material-icons">
+                      search
+                  </i>
+              </button>
+          </div></li>
+            <li><a href="7_Films.html">Films</a></li>
+            <li><a href="9_Lists.html">Lists</a></li>
+            <li> <div class="dropdown">
+              <button class="dropbtn" onclick="myFunction()">Username
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content" id="myDropdown">
+                <a href="11_Profile.html">Profile</a>
+                <a href="19_ProfileNetworkInvite.html">Invite</a>
+                <a href="1_HomePage.html">Log-out</a>
+              </div>
+              </div> </li>
+          </ul>
+        </nav>
+        <h2 class="big-text"></h2>
+      </section>
+
+
+      <div class = "lalaland" style="color: white;">
+      <video width="850" height="400" controls>
+        <source src="videos/La La Land (2016 Movie) Official Trailer – 'Dreamers'.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+      </video>
+    </div>
+
+
+     <div class = "lalaland-info">
+        <h4>La La Land</h4><button class="btn" id="green"><i class="fa fa-thumbs-up fa-lg" aria-hidden="true"></i></button>
+        <button class="btn" id="red"><i class="fa fa-thumbs-down fa-lg" aria-hidden="true"></i></button>
+        <script src="https://use.fontawesome.com/fe459689b4.js"></script>
+
+ 
+        <h6>La La Land is a 2016 American musical romantic dram film  written adn directed by Damien 
+          Chazelle.It stars Ryan Gosling as a jazz pianist and Emma Stone as an aspiring actress,</br> 
+          who meet and fall in love while pursuing their dreams in Los Angeles.</br>
+          Directed by: Damien Chazelle
+          Cast:Ryan Gosling, Emma Stone, John Legend,Finn Wittrock</br>
+          IMDB:8.1</br>
+          </h6>
+        
+      </div>
+    </div>
+
+    <button class="open-button" onclick="openForm()">Add to List</button>
+
+    <div class="form-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+        You haven't created any lists!
+      </form>
+    </div>
+
+    <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
+
+ 
+    
+  
+
+ 
+  
+ <style type="text/css">
+  textarea.html-text-box {background-color:#070707;background-image:url(http://);background-repeat:no-repeat;background-attachment:fixed;border-width:1;border-style:solid;border-color:#cccccc;font-family:Arial;font-size:10pt;color:#FFFFFF;}
+  input.html-text-box {background-color:#ffffff;font-family:Arial;font-size:12pt;color:#000000;}
+  </style>
+  
+  <div class = "comment">
+  </br>
+    
+  
+     <form method="post" action="10.1_Comments.html"><textarea name="comments" cols="100" rows="3" class="html-text-box">Have a comment?</textarea><br> <input type="submit" style="position: absolute; top: 50px; left: 680px;" value="Send" class="html-text-box"></form>  
+
+     
+      <form>
+        <div class = "checkbox-login">
+          <form>
+         <input type="checkbox" id="vehicle1" name="checkbox1" value="Spoiler?">
+         <label for="checkbox1">Spoiler?<style></style></label><br>
+      
+        </div>   
+   
+
+    </div>
+    </div>
+
+  <button type="button" class="collapsible">Comments</button>
+      <div class="content" style="color: white;">
+      <p>
+      </br>
+     
+        <h6><i>09.53 8/01/2021</i></h6>
+        <p><i>Lisa said: </i>Great movie! Definitely will rewatch.</p>
+        <button class="btn" id="green"><i class="fa fa-thumbs-up fa-lg" aria-hidden="true"></i></button>
+         <button class="btn" id="red"><i class="fa fa-thumbs-down fa-lg" aria-hidden="true"></i></button>
+        </br></br> 
+        <h6><i>09.53 8/01/2021</i></h6>
+        <p><i>Isaac said: </i>A classic! </p>
+        <button class="btn" id="green"><i class="fa fa-thumbs-up fa-lg" aria-hidden="true"></i></button>
+        <button class="btn" id="red"><i class="fa fa-thumbs-down fa-lg" aria-hidden="true"></i></button>
+      </br></br>
+        <h6><i>09.53 8/01/2021</i></h6>
+        <p><i>holydilara said: </i>Not really into it. Didn't like the lead actor. </p></p>
+        <button class="btn" id="green"><i class="fa fa-thumbs-up fa-lg" aria-hidden="true"></i></button>
+       <button class="btn" id="red"><i class="fa fa-thumbs-down fa-lg" aria-hidden="true"></i></button>
+</div>
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+  </script> 
+
+  
+
+  
+  
+
+      <footer>
+        <ul class="footer-links">
+          <li><a href="28_TermsOfUse.html">TERMS OF USE</a></li>
+          <li><a href="29_PrivacyPolicy.html">PRIVACY POLICY</a></li>
+          <li><a href="4_FAQ.html">F.A.Q.</a></li>
+        </ul>
+        
+    </footer>
+    </main>
+    
+  </body>
+</html> 
