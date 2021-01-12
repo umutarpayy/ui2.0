@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <title>Settings</title>
+    <link rel="stylesheet" href="css/prisettingpage.css">
+    <style>
+        .h1 {
+            font-size: 40px;
+            border: rgba(225, 225, 225, 0.5) solid 2px;
+            border-radius: 25px;
+        }
+    </style>
+    <!--border: 2px white;
+        border-radius: 8px;-->
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <h1 class="h1"><i class="fas fa-cog"></i> Settings</h1>
+            <ul style="list-style: none;">
+                <li><a href="#">Change Password</a></li>
+                <li class="active"><a href="#">Privacy Settings</a></li>
+                <li><a href="#">Change Payment</a></li>
+                <li><a href="^#">Cancel Subscription</a></li>
+                <li ><a href="#">Delete Account</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="topright"><a href="20_EditProfile.html"><img src="/close_white_2048x2048.png" height="50px"
+                width="50px"></a> </div>
+
+    <div class="cancelForm">
+        <form>
+            <h2 style="text-decoration: underline;">Privacy Settings</h2>
+
+            <div class="boxs">
+                <form>
+                    <div class="outer " id="ıcons">
+                        <div class="first">
+                            <br>
+                            <input type="radio" id="private" name="check" value="yes">
+                            <label for="active">Private account</label><br>
+                            <br>
+                            <br>
+                            <input type="radio" id="onlyprivate" name="check" value="yes">
+                            <label for="deactive">Make private only</label><br>
+                            <br>
+                            <div class="lineone">
+                                <input type="radio" id="onlyprivate" name="first" value="list">
+                                <label for="deactive">Lists</label><br>
+                            </div>
+                            <br>
+                            <div class="line2">
+                                <input type="radio" id="onlyprivate" name="second" value="rewievs">
+                                <label for="deactive">Reviews</label><br>
+                            </div>
+                            <div class="line12">
+                                <input type="radio" id="onlyprivate" name="third" value="actvity">
+                                <label for="deactive">Activity</label><br>
+                            </div>
+                            <div class="line13">
+                                <input type="radio" id="onlyprivate" name="fourth" value="network">
+                                <label for="deactive">Network</label><br>
+                            </div>
+                            <div class="line22">
+                                <input type="radio" id="onlyprivate" name="fifth" value="watchlist">
+                                <label for="deactive">Watchlist</label><br>
+                            </div>
+            
+                        </div>
+                        
+                        <!--<div class=" btnholder">
+                            <button class="btn" type="submit" name="">Save Changes</button>
+                        </div> -->
+
+                        
+                        
+                        <div class=" btnholder2">
+                            <button class="btn" type="submit" name="">Cancel</button>
+                        </div>
+                    </div>
+                </form>
+
+
+            </div>
+
+            <div class = "btnholder">
+             <!-- Trigger/Open The Modal -->
+             <button id="myBtn" style=" text-align: center;
+             vertical-align: middle;
+             display: inline-block;
+             width: 185px;
+             margin: 140px 20px 0;
+             padding: 10px 15px;
+             line-height: 20px;
+             border-radius: 20px;
+             background: transparent;
+             color: #ffffff;
+             text-decoration: none;
+             border: 2px solid rgba(225, 225, 225, 0.5);  ">Save</button>
+
+             <!-- The Modal -->
+             <div id="myModal" class="modal">
+
+             <!-- Modal content -->
+             <div class="modal-content">
+                 <span class="close">&times;</span>
+                 <p>Privacy settings are changed.</p>
+             </div>
+
+             </div>
+            </div>
+        </form>
+    </div>
+                
+            <script>
+                // Get the modal
+                var modal = document.getElementById("myModal");
+
+                // Get the button that opens the modal
+                var btn = document.getElementById("myBtn");
+
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+
+                // When the user clicks the button, open the modal 
+                btn.onclick = function() {
+                modal.style.display = "block";
+                }
+
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() {
+                modal.style.display = "none";
+                }
+
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+                }
+                </script>
+
+</body>

@@ -1,4 +1,4 @@
-/*@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap");*/
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
 
 * {
@@ -57,7 +57,6 @@ body {
 }
 
 .wrapper .sidebar ul li {
-  border-bottom: 2px solid rgba(225, 225, 225, 0.5);
   border-top: 2px solid rgba(225, 225, 225, 0.5);
   color: white;
   display: block;
@@ -66,20 +65,18 @@ body {
   list-style-type: none;
   padding: 20px;
 }
-
 .wrapper .sidebar ul li:first-child {
   border-top: 2px solid rgba(225, 225, 225, 0.5);
 }
 .wrapper .sidebar ul li:last-child {
   border-bottom: 2px solid rgba(225, 225, 225, 0.5);
 }
-
 .wrapper .sidebar ul li a {
   color: white;
   display: block;
+
   text-decoration: none;
 }
-
 .sidebar > ul > li.active {
   padding: 10px;
 }
@@ -88,28 +85,23 @@ body {
   padding: 10px;
   border-radius: 20px;
 }
-*/
 
-/*.wrapper .sidebar ul li:hover {
-  background: #696969;
-  width: 180px;
-  height: 59px;
-  /*border-top-left-radius: 25%;
+/* .wrapper .sidebar ul li:hover { */
+/* background: #696969; */
+/* width: 180px; */
+/* height: 59px; */
+/*border-top-left-radius: 25%;
   border-top-right-radius: 25%;
   border-bottom-left-radius: 25%;
-  border-bottom-right-radius: 25%;
-  border-radius: 30px;
-}*/
+  border-bottom-right-radius: 25%;*/
+/* border-radius: 30px; */
+/* } */
 
-/*.wrapper .sidebar ul li:hover a {
-  color: #c0c0c0;
-}*/
+/* .wrapper .sidebar ul li:hover a { */
+/* color: #c0c0c0; */
+/* } */
 
-.form {
-  width: 100;
-  float: left;
-}
-.cancelForm {
+.passwordForm {
   /* position: absolute; */
   /* left: 50%; */
   /* top: 50%; */
@@ -123,100 +115,65 @@ body {
   /* margin: 0 auto; */
   margin: 148px 0 0 340px;
 }
-
-.cancelForm h2 {
-  color: white;
-  position: absolute;
-
-  left: 330px;
-  top: 100px;
-  font-size: x-large;
-}
-.explanation {
+.password {
   width: 100%;
   float: left;
 }
-.expl {
+.newpassword {
   width: 50%;
   float: left;
 }
+.passwordForm h2 {
+  color: #c0c0c0;
+  position: absolute;
+  height: 40px;
+  left: -120px;
+  top: -170px;
+}
 
+.passwordForm .password input {
+  /* display: grid; */
+  /* grid-row-gap: 50px; */
+  /* grid-template-columns: auto auto auto; */
+  width: 365px;
+  /* height: 1%; */
+  float: left;
+  background-color: #282a2b;
+  border: 2px solid rgba(225, 225, 225, 0.5);
+  font-size: 20px;
+  border-radius: 30px;
+  /* padding: 5px 0; */
+  /* padding-top: 10px; */
+  padding-right: -10px;
+  margin: 20px 0 35px;
+  /* padding-bottom: 20px; */
+  /* padding-left: 70px; */
+  padding: 10px 10px 20px 70px;
+}
 .form {
   width: 100;
   float: left;
 }
-.explanation p {
+.password span {
   width: 100%;
   float: left;
+}
+.passwordForm .password label {
+  /* position: absolute; */
+  font-size: medium;
+  /* left: 2px; */
   color: white;
+  border-bottom: 2px solid rgba(225, 225, 225, 0.5);
+  margin: 0 0 30px;
 }
-
-.expl p {
-  width: 100%;
-  float: left;
-  color: white;
-  margin-bottom: 20px;
-}
-
-.outer {
-  border: 2px solid #c0c0c0;
-  padding: 3px;
-  height: 360px;
-  float: left;
-  margin: 5px;
-  position: absolute;
-
-  left: 330px;
-  top: 190px;
-  bottom: 350px;
-  right: 330px;
-}
-
-#socialIcons {
-  position: relative;
-  margin-top: 300px !important;
-}
-.cancelForm .boxs .first {
-  width: 100%;
-  float: left;
-  color: white;
-}
-
-.cancelForm .boxs .btnholder {
+.btnholder {
   width: 500px;
   margin: 0 auto;
   /* float: left; */
   /* padding:150px 10px ; */
 }
 
-.boxs .outer .first .lineone {
-  position: absolute;
-  left: 100px;
-}
-.boxs .outer .first .line2 {
-  position: absolute;
-  left: 300px;
-  bottom: 223px;
-}
-
-.boxs .outer .first .line12 {
-  position: absolute;
-  left: 500px;
-  bottom: 223px;
-}
-.boxs .outer .first .line13 {
-  position: absolute;
-  left: 100px;
-  bottom: 183px;
-}
-
-.boxs .outer .first .line22 {
-  position: absolute;
-  left: 300px;
-  bottom: 183px;
-}
-
-.cancelForm .boxs .btn {
+.btn {
   float: left;
   /* padding: 0 0 0 20px; */
   text-align: center;
@@ -232,25 +189,6 @@ body {
   text-decoration: none;
   border: 2px solid rgba(225, 225, 225, 0.5);
 }
-
-.btnholder {
-  position: absolute;
-  left: 500px;
-  top:318px;
-  width: 500px;
-  margin: 0 auto;
-  /* float: left; */
-  /* padding:150px 10px ; */
-}
-.btnholder2 {
-  position: absolute;
-  left: 400px;
-  bottom: 50px;
-  width: 500px;
-  margin: 0 auto;
-  /* float: left; */
-  /* padding:150px 10px ; */
-} 
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -263,7 +201,10 @@ body {
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  
+ 
 }
+
 
 /* Modal Content */
 .modal-content {
@@ -272,6 +213,8 @@ body {
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+  
+  
 }
 
 /* The Close Button */
